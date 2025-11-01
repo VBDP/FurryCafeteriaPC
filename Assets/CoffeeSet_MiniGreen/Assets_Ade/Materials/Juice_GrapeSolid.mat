@@ -1,0 +1,214 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Juice_GrapeSolid
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _ALPHAPREMULTIPLY_ON
+  - _EMISSION
+  m_InvalidKeywords:
+  - _ISCLEAROPACITY_ON
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Color0_Tex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Color1_Tex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Color2_Tex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Color3_Tex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Color_DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal0_Tex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal1_Tex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal2_Tex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal3_Tex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Amount: 0.2
+    - _Blend01_DistScale: 0
+    - _Blend01_DistStrength: 0
+    - _Blend01_Height: 0
+    - _Blend01_NoisePower: 0
+    - _Blend01_NoiseScale: 0
+    - _Blend01_Offset: 0
+    - _Blend01_Smooth: 0
+    - _Blend12_DistScale: 0
+    - _Blend12_DistStrength: 0
+    - _Blend12_Height: 0
+    - _Blend12_NoisePower: 0
+    - _Blend12_NoiseScale: 0
+    - _Blend12_Offset: 0
+    - _Blend12_Smooth: 0
+    - _Blend23_DistScale: 0
+    - _Blend23_DistStrength: 0
+    - _Blend23_Height: 0
+    - _Blend23_NoisePower: 0
+    - _Blend23_NoiseScale: 0
+    - _Blend23_Offset: 0
+    - _Blend23_Smooth: 0
+    - _BumpScale: 1
+    - _Color0_NoiseLerp: 1
+    - _Color0_NoiseScale: 0
+    - _Color0_NoiseSmooth: 1
+    - _Color1_NoiseLerp: 1
+    - _Color1_NoiseScale: 0
+    - _Color1_NoiseSmooth: 1
+    - _Color2_NoiseLerp: 1
+    - _Color2_NoiseScale: 0
+    - _Color2_NoiseSmooth: 1
+    - _Color3_NoiseLerp: 1
+    - _Color3_NoiseScale: 0
+    - _Color3_NoiseSmooth: 1
+    - _ContentCount: 1
+    - _Cutoff: 0.5
+    - _Depth0_Dist: 0
+    - _Depth0_Sharp: 0
+    - _Depth1_Dist: 0
+    - _Depth1_Sharp: 0
+    - _Depth2_Dist: 0
+    - _Depth2_Sharp: 0
+    - _Depth3_Dist: 0
+    - _Depth3_Sharp: 0
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 10
+    - _Fresnel_NormalMix: 0
+    - _Fresnel_Power: 0
+    - _Fresnel_Scale: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.8
+    - _GlossyReflections: 1
+    - _HeightDirection: 0
+    - _IsClearOpacity: 1
+    - _Metal0: 0
+    - _Metal1: 0
+    - _Metal2: 0
+    - _Metal3: 0
+    - _Metalic: 0
+    - _Metallic: 0
+    - _Mode: 3
+    - _Normal0_Power: 0
+    - _Normal1_Power: 0
+    - _Normal2_Power: 0
+    - _Normal3_Power: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Simple_MS: 0
+    - _Simple_Normal: 0
+    - _Smooth: 0.8
+    - _Smooth0: 0
+    - _Smooth1: 0
+    - _Smooth2: 0
+    - _Smooth3: 0
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 0
+    - __dirty: 0
+    m_Colors:
+    - _AmountCap: {r: -6.4389, g: 6.59976, b: 0, a: 0}
+    - _BaseColor: {r: 0.9019608, g: 1, b: 0.6, a: 0.5019608}
+    - _Blend01_DistOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _Blend01_DistStretch: {r: 0, g: 0, b: 0, a: 0}
+    - _Blend12_DistOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _Blend12_DistStretch: {r: 0, g: 0, b: 0, a: 0}
+    - _Blend23_DistOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _Blend23_DistStretch: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 0.9019608, g: 1, b: 0.6, a: 0.5019608}
+    - _Color0_Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color0_Tint: {r: 1, g: 1, b: 1, a: 1}
+    - _Color1_Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color1_Tint: {r: 1, g: 1, b: 1, a: 1}
+    - _Color2_Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color2_Tint: {r: 1, g: 1, b: 1, a: 1}
+    - _Color3_Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color3_Tint: {r: 1, g: 1, b: 1, a: 1}
+    - _Color_DetailColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _HeightMinMax: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a09b01936ae9654099deb9917ce47cc, type: 3}
+  m_Name: CafeLiquid_GroupObj
+  m_EditorClassIdentifier: 
+  _matLiquid:
+  - {fileID: 2100000, guid: aab522959fca92c4ebcac06213c212dd, type: 2}
+  - {fileID: 2100000, guid: 2b6b2836bffeafa4d8155e74d28e47cf, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 2100000, guid: 24546c1f4c09eeb40944ff9cd992bd57, type: 2}
+  _matMask:
+  - {fileID: 2100000, guid: 401e863d0d37081408a151e697d46ee9, type: 2}
+  - {fileID: 2100000, guid: c5e506a9ca3804e438a71565957ddcf7, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 2100000, guid: 2af35fd4382d3e14dbd062018c4b1ca7, type: 2}
+  _folds: 0000000000

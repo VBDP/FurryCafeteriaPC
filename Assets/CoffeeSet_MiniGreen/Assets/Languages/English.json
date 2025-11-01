@@ -1,0 +1,127 @@
+{
+    "langName": "English",
+    "langCode": "en",
+    "langFont": "NanumGothic",
+
+
+
+    "-----comment-Menu-----": "For Menu Plate Under Here",
+    
+    "info": "Info",
+    "infoQR": "QR Codes on the backside",
+    "needDLC": "Need DLC",
+    "commingSoon": "Comming Soon",
+        
+    "coffee": "Coffee",
+    "ade": "Ade",
+    "bubbleTea": "Bubble Tea",
+
+    "espresso": "Espresso",
+    "espressoConPanna": "Espresso Con Panna",
+    "americano": "Americano",
+    "latte": "Latte",
+    "cappuccino": "Cappuccino",
+    "cafeMocha": "Cafe Mocha",
+    "cafeMochaArt": "Cafe Mocha with Art",
+    "caramelMacchiato": "Caramel Macchiato",
+
+
+
+    "-----comment-Machine-----": "For Espresso Machine Under Here",
+
+    "machine_filterNeed": "Need Porta Filter",
+    "machine_filterNeedTamped": "Need Tamped\nPorta Filter",
+    "machine_filterPlaced": "Filter Placed",
+    "machine_filterChange": "Need to Change Filter",
+    "machine_cupNeed": "Need Espresso Cup",
+    "machine_cupNeedEmpty": "Need Empty\nEspresso Cup",
+    "machine_extracting": "Extracting Espresso",
+    "machine_PitcherNeed": "Need Milk-filled Pitcher",
+    "machine_PitcherPlaced": "Pitcher Placed",
+    "machine_PitcherChange": "Need to\nChange Pitcher",
+    "machine_frothLatte": "Froth Mode\nLatte",
+    "machine_frothCappu": "Froth Mode\nCappuccino",
+    "machine_frothing": "Frothing Milk",
+    "machine_waterOn": "Hot Water On",
+    "machine_waterOff": "Hot Water Off",
+
+
+
+    "-----comment-Pad-----": "For Pad Under Here",
+
+    "tutorial": "Tutorial",
+
+    "extractingEspresso": "Extracting Espresso",
+    "extractingEspresso_1_title": "1. Grinding Beans",
+    "extractingEspresso_1_content": "Place an empty portafilter on the grinder deposit and press the button.\nThe machine will grind the beans and fill the portafilter with ground beans.",
+    "extractingEspresso_2_title": "2. Tamping",
+    "extractingEspresso_2_content": "Before placing the portafilter on the espresso machine, tamp filter beans with a tamper.",
+    "extractingEspresso_3_title": "3. Setting up machine and Extracting",
+    "extractingEspresso_3_content": "Adjust spout of the portafilter by clicking.\nPlace a tamped portafilter on the espresso machine.\nPlace espresso cups under the portafiler as many spout count.\nYou can see shadows under the portafilter.\nTo extract cups of espresso, press the third button.",
+    "extractingEspresso_4_title": "4. Empty Portafilter",
+    "extractingEspresso_4_content": "After extracting cups of espresso, empty portafilter through hit the knock box.",
+
+    "frothingMilk": "Frothing Milk",
+    "frothingMilk_1_title": "1. Pouring Milk",
+    "frothingMilk_1_content": "Open the cap of the milk pack through clicking whild holding.\nPour milk in an empty pitcher through tilting the milk pack.",
+    "frothingMilk_2_title": "2. Setting up machine and Frothing",
+    "frothingMilk_2_content": "Place the milk-filled pitcher on the frothing nozzle of espresso machine.\nTo change the frothing mode, press the fourth button.\nTo begin frothing, press the button on the machine's side.",
+    "frothingMilk_3_title": "3. Caution",
+    "frothingMilk_3_content": "You can pour milk in a pitcher by tilting and clicking it.\nBe careful if pouring out milk on the floor by accident.",
+
+    "whippedCream": "Whipped Cream",
+    "whippedCream_1_content": "Using the cream dispenser, you can add wipped cream to any type of beverage.",
+    "whippedCream_2_content": "When there is no powder or syrup on the beverage, you can add whipped cream.",
+    "whippedCream_3_content": "Optionally, powder or syrup can be sprinkled on whipped cream.",
+
+    "dishesAndIce": "Dishes, Ice",
+    "dishesAndIce_1_title": "Plate",
+    "dishesAndIce_1_content": "Espresso cups and Coffee cups can be placed on their respective plates.",
+    "dishesAndIce_2_title": "Straw",
+    "dishesAndIce_2_content": "Straws can be placed on glass cups.",
+    "dishesAndIce_3_title": "Washing Dishes",
+    "dishesAndIce_3_content": "If dished are dirty or have leftovers, you can soak them in the sink and wash them off.",
+    "dishesAndIce_4_title": "Ice",
+    "dishesAndIce_4_content": "You can get ice through touching the button on the ice dispenser with glass cup.",
+
+
+
+    "recipe": "Recipe",
+    
+    "coffeeHot": "Hot Coffee",
+    "coffeeIced": "Iced Coffee",
+    "option": "- Option -",
+
+    "cupCoffee": "Coffee Cup",
+    "cupEspresso": "Espresso Cup",
+    "cupGlass": "Glass Cup",
+    "cupMug": "Mug",
+
+    "ice": "Ice",
+    "espressoCaramel": "Caramel Syrup Mixed Espresso",
+    "waterHot": "Hot Water",
+    "waterCold": "Cold Water",
+    "milk": "Milk",
+    "milkLatte": "Latte Frothed Milk",
+    "milkCappuccino": "Cappuccino Frothed Milk",
+    "powderCinamon": "Cinamon Powder",
+    "powderChocolate": "Chocolate Powder",
+    "syrupCaramel": "Caramel Syrup",
+    "syrupChocolate": "Chocolate Syrup",
+    "mocha_powderOrSyrup": "Chocolate\nPowder or Syrup",
+
+
+
+    "config": "Config",
+    "config_resetPosition": "Reset Position",
+    "config_all": "All",
+    "config_tools": "Tools",
+    "config_cups": "Cups",
+    "config_ingredients": "Ingredients",
+    "config_plates": "Plates",
+
+
+
+    "info_contact_title": "Contact",
+    "info_contact_content": "If you find a bug or have any questions about the coffee set, please contact me via Discord.\nPlease use English or Korean."
+}

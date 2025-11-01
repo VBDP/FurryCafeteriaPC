@@ -1,0 +1,127 @@
+{
+    "langName": "한국어",
+    "langCode": "ko",
+    "langFont": "NanumGothic",
+
+
+
+    "-----comment-Menu-----": "For Menu Plate Under Here",
+    
+    "info": "정보",
+    "infoQR": "뒷면에 QR 코드가 있습니다",
+    "needDLC": "DLC 필요",
+    "commingSoon": "곧 출시",
+    
+    "coffee": "커피",
+    "ade": "에이드",
+    "bubbleTea": "버블티",
+    
+    "espresso": "에스프레소",
+    "espressoConPanna": "에스프레소 콘파냐",
+    "americano": "아메리카노",
+    "latte": "카페 라떼",
+    "cappuccino": "카푸치노",
+    "cafeMocha": "카페 모카",
+    "cafeMochaArt": "카페 모카 (아트)",
+    "caramelMacchiato": "카라멜 마키아토",
+
+
+
+    "-----comment-Machine-----": "For Espresso Machine Under Here",
+
+    "machine_filterNeed": "필터가 필요합니다",
+    "machine_filterNeedTamped": "탬핑된 필터가\n필요합니다",
+    "machine_filterPlaced": "필터가\n장착 되었습니다",
+    "machine_filterChange": "필터 교체가\n필요합니다",
+    "machine_cupNeed": "에스프레소 컵이\n필요합니다",
+    "machine_cupNeedEmpty": "빈 에스프레소 컵이\n필요합니다",
+    "machine_extracting": "에스프레소 추출 중",
+    "machine_PitcherNeed": "우유가 채워진\n피처가 필요합니다",
+    "machine_PitcherPlaced": "피처가\n장착 되었습니다",
+    "machine_PitcherChange": "피처 교체가\n필요합니다",
+    "machine_frothLatte": "거품 모드\n라떼",
+    "machine_frothCappu": "거품 모드\n카푸치노",
+    "machine_frothing": "우유 거품내는 중",
+    "machine_waterOn": "뜨거운 물 켜짐",
+    "machine_waterOff": "뜨거운 물 꺼짐",
+
+    
+
+    "-----comment-Pad-----": "For Pad Under Here",
+
+    "tutorial": "사용법",
+
+    "extractingEspresso": "에스프레소 추출",
+    "extractingEspresso_1_title": "1. 커피 콩 분쇄하기",
+    "extractingEspresso_1_content": "빈 필터를 그라인더에 올려놓습니다.\n그라인더의 버튼을 눌러 분쇄를 시작합니다.",
+    "extractingEspresso_2_title": "2. 필터 탬핑하기",
+    "extractingEspresso_2_content": "탬퍼를 이용하여 분쇄된 콩이 담긴 필터를 탬핑합니다.",
+    "extractingEspresso_3_title": "3. 머신 세팅 및 추출하기",
+    "extractingEspresso_3_content": "필터를 들고 클릭하여 원하는 노즐로 변경합니다.\n탬핑된 필터를 머신에 장착합니다.\n조절된 노즐에 맞게 표시된 아래의 그림자에 빈 에스프레소 컵을 놓습니다.\n머신의 세번째 버튼을 눌러 추출을 시작합니다.",
+    "extractingEspresso_4_title": "4. 필터 비우기",
+    "extractingEspresso_4_content": "사용된 필터는 넉박스(Knock Box)에 두드려서 비웁니다.",
+
+    "frothingMilk": "우유 거품",
+    "frothingMilk_1_title": "1. 우유 따르기",
+    "frothingMilk_1_content": "우유 팩을 들고 클릭하여 뚜껑을 엽니다.\n우유 팩을 기울여 빈 피처에 우유를 따릅니다.",
+    "frothingMilk_2_title": "2. 머신 세팅 및 거품 내기",
+    "frothingMilk_2_content": "우유가 든 피처를 머신의 노즐에 장착합니다.\n머신의 4번째 버튼을 눌러 모드를 변경합니다.\n머신 오른쪽의 버튼을 눌러 거품내기를 시작합니다.",
+    "frothingMilk_3_title": "3. 주의사항",
+    "frothingMilk_3_content": "우유가 든 피처를 기울인 뒤 클릭하여 내용물을 따라냅니다.\n잘못 조준하여 내용물을 버리지 않도록 조심합니다.",
+
+    "whippedCream": "휘핑크림",
+    "whippedCream_1_content": "크림 디스펜서를 이용하여 모든 종류의 완성된 음료 위에 휘핑크림을 올릴 수 있습니다.",
+    "whippedCream_2_content": "완성된 음료 위에 파우더나 시럽이 있으면 휘핑크립을 올릴 수 없습니다.",
+    "whippedCream_3_content": "기호에 맞게 크림 위에 파우더나 시럽을 뿌려 마무리 할 수 있습니다.",
+
+    "dishesAndIce": "그릇, 얼음",
+    "dishesAndIce_1_title": "접시",
+    "dishesAndIce_1_content": "에스프레소 잔과 커피 잔은 각자 크기에 맞는 접시에 올려놓을 수 있습니다.",
+    "dishesAndIce_2_title": "빨대",
+    "dishesAndIce_2_content": "아이스 음료를 만들 수 있는 유리 잔은 빨대를 사용할 수 있습니다.",
+    "dishesAndIce_3_title": "설거지",
+    "dishesAndIce_3_content": "더럽거나 내용물이 남은 식기는 싱크대의 물에 담가 씻어낼 수 있습니다.",
+    "dishesAndIce_4_title": "얼음",
+    "dishesAndIce_4_content": "유리컵으로 얼음 정수기의 버튼을 터치하면 얼음을 받을 수 있습니다.",
+
+
+
+    "recipe": "레시피",
+    
+    "coffeeHot": "뜨거운 커피",
+    "coffeeIced": "아이스 커피",
+    "option": "옵션",
+
+    "cupCoffee": "커피 잔",
+    "cupEspresso": "에스프레소 잔",
+    "cupGlass": "유리 컵",
+    "cupMug": "머그잔",
+
+    "ice": "얼음",
+    "espressoCaramel": "카라멜 시럽이 혼합된 에스프레소",
+    "waterHot": "뜨거운 물",
+    "waterCold": "차가운 물",
+    "milk": "우유",
+    "milkLatte": "라떼 거품 우유",
+    "milkCappuccino": "카푸치노 거품 우유",
+    "powderCinamon": "시나몬 파우더",
+    "powderChocolate": "초콜렛 파우더",
+    "syrupCaramel": "카라멜 시럽",
+    "syrupChocolate": "초콜렛 시럽",
+    "mocha_powderOrSyrup": "초콜렛\n파우더 또는 시럽",
+
+
+
+    "config": "설정",
+    "config_resetPosition": "위치 초기화",
+    "config_all": "모두",
+    "config_tools": "도구",
+    "config_cups": "컵",
+    "config_ingredients": "재료",
+    "config_plates": "접시",
+
+
+
+    "info_contact_title": "문의",
+    "info_contact_content": "버그를 발견했거나 커피 세트에 관해 궁금한 점이 있을 땐 디스코드를 통하여 연락 부탁드립니다."
+}

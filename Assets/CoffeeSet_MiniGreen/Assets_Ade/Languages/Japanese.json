@@ -1,0 +1,14 @@
+{
+    "langCode": "jp",
+
+    "lemon": "レモン",
+    "greenGrape": "グレープフルーツ",
+    "grapefruit": "白ぶどう",
+    "strawberry": "いちご",
+    "sparklingWater": "炭酸水",
+
+    "menuAde": "レモン\nグレープフルーツ\n白ぶどう\nいちご",
+
+    "recipeAde_garnish": "ハーブやフルーツを添える",
+    "recipeAde_base": "絞られたレモンか\nグレープフルーツ\n保存されたいちごか\n白ぶどう"
+}

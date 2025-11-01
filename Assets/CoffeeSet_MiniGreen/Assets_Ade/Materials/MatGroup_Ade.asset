@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a45099139c4654478a470f1556bf236, type: 3}
+  m_Name: MatGroup_Ade
+  m_EditorClassIdentifier: 
+  m_matInfoList:
+  - name: mat_Ade
+    mat:
+    - {fileID: 2100000, guid: fe0e507ae61255c4c877f627c6a18373, type: 2}
+    - {fileID: 2100000, guid: 15769d8499f11b64596fac1231174809, type: 2}
+    - {fileID: 2100000, guid: 9d722a25358d3b54f92ba7873122811b, type: 2}
+    - {fileID: 2100000, guid: 26179a77cb971c644ac7bcf978e50b84, type: 2}
+    - {fileID: 2100000, guid: b3281c8775feaa543acc798817239264, type: 2}
+    - {fileID: 2100000, guid: 1e175c2c369f55d4599f21c277469e3b, type: 2}
+    - {fileID: 2100000, guid: e64c5b816d5a2c64f8c2b669b64194d6, type: 2}
+    - {fileID: 2100000, guid: 08465f4e61ff4bf49b59e3b9e96e1037, type: 2}
+    isArr: 1
+    isExpanded: 1

@@ -1,0 +1,14 @@
+{
+    "langCode": "en",
+
+    "lemon": "Lemon",
+    "greenGrape": "Green Grape",
+    "grapefruit": "Grapefruit",
+    "strawberry": "Strawberry",
+    "sparklingWater": "Sparkling Water",
+    
+    "menuAde": "Lemon\nGreen Grape\nGrapefruit\nStrawberry",
+
+    "recipeAde_garnish": "Garnish with Herb and Fruit",
+    "recipeAde_base": "Squeezed Lemon or Grapefruit\nPreserved Strawberry or Green Grape"
+}

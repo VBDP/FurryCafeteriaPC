@@ -1,0 +1,127 @@
+{
+    "langName": "日本語",
+    "langCode": "jp",
+    "langFont": "NotoSansJP",
+    
+
+
+    "-----comment-Menu-----": "For Menu Plate Under Here",
+
+    "info": "情報",
+    "infoQR": "後ろにQRコードがあります",
+    "needDLC": "DLCが必要です",
+    "commingSoon": "近日公開",
+    
+    "coffee": "コーヒー",
+    "ade": "エード",
+    "bubbleTea": "茶",
+    
+    "espresso": "エスプレッソ",
+    "espressoConPanna": "エスプレッソコンパナ",
+    "americano": "アメリカーノ",
+    "latte": "ラテ",
+    "cappuccino": "カプチーノ",
+    "cafeMocha": "カフェモカ",
+    "cafeMochaArt": "カフェモカ（アート）",
+    "caramelMacchiato": "キャラメルマキアート",
+
+
+
+    "-----comment-Machine-----": "For Espresso Machine Under Here",
+
+    "machine_filterNeed": "ポータフィルター必要",
+    "machine_filterNeedTamped": "タンパされた\nポータフィルター必要",
+    "machine_filterPlaced": "フィルター\n設置済み",
+    "machine_filterChange": "フィルター\n交換必要",
+    "machine_cupNeed": "エスプレッソ\nカップ必要",
+    "machine_cupNeedEmpty": "空のエスプレッソ\nカップ必要",
+    "machine_extracting": "エスプレッソ\n抽出中",
+    "machine_PitcherNeed": "牛乳入り\nピッチャー必要",
+    "machine_PitcherPlaced": "ピッチャー\n設置済み",
+    "machine_PitcherChange": "ピッチャー\n交換必要",
+    "machine_frothLatte": "ラテ用\n泡立てモード",
+    "machine_frothCappu": "カプチーノ用\n泡立てモード",
+    "machine_frothing": "ミルク泡立て中",
+    "machine_waterOn": "お湯作動中",
+    "machine_waterOff": "お湯停止中",
+
+
+
+    "-----comment-Pad-----": "For Pad Under Here",
+
+    "tutorial": "使い方",
+
+    "extractingEspresso": "エスプレッソを抽出する",
+    "extractingEspresso_1_title": "1. 豆の挽き方",
+    "extractingEspresso_1_content": "空のポルタフィルターをグラインダーに設置します。\nグラインダーのボタンを押して豆を挽きます。",
+    "extractingEspresso_2_title": "2. タンピング",
+    "extractingEspresso_2_content": "ポルタフィルターをグラインダーから外して、タンパーで豆を押し固めます。",
+    "extractingEspresso_3_title": "3. 抽出",
+    "extractingEspresso_3_content": "ポルタフィルターをUseして抽出する数（１カップか２カップ）を選択します。\nポルタフィルターをエスプレッソマシーンに設置します。\nポルタフィルターの下に表示されている影にエスプレッソカップ設置します。\nカップを設置後、左から三番目の抽出ボタンを押してエスプレッソを抽出します。",
+    "extractingEspresso_4_title": " 4. ポルタフィルターの掃除",
+    "extractingEspresso_4_content": "エスプレッソを抽出した後、ポルタフィルターをノックボックス当てて、フィルター内を空にします。",
+
+    "frothingMilk": "ミルクを泡立てる",
+    "frothingMilk_1_title": "1. ミルクを注ぐ",
+    "frothingMilk_1_content": "牛乳パックをUseしてキャップを外します。\n空のミルクピッチャーにミルクを注ぎます。",
+    "frothingMilk_2_title": "2. 設置と泡立て",
+    "frothingMilk_2_content": "ミルクが入ったミルクピッチャーをエスプレッソマシーンの右側のノズルに設置します。\n泡立てモードを変えるには、左からから四番目のボタンを押してください。\nエスプレッソマシーンの右横にあるボタンを押して泡立てします。",
+    "frothingMilk_3_title": "3. 注意",
+    "frothingMilk_3_content": "ミルクピッチャーを傾けると泡立てたミルクがこぼれてしまうので気をつけてください。",
+
+    "whippedCream": "ホイップクリーム",
+    "whippedCream_1_content": "クリームディスペンサーを使ってコーヒーの上にホイップクリームを乗せることができます。",
+    "whippedCream_2_content": "コーヒーの上にパウダーかシロップが乗っていない場合のみホイップクリームを乗せれます。",
+    "whippedCream_3_content": "コーヒーの上に乗せたホイップクリームの上にパウダーかシロップを乗せることは可能です。",
+
+    "dishesAndIce": "食器, 氷",
+    "dishesAndIce_1_title": "ソーサー",
+    "dishesAndIce_1_content": "エスプレッソカップとコーヒーカップはそれぞれ専用ソーサーの上に置くことができます。",
+    "dishesAndIce_2_title": "ストロー",
+    "dishesAndIce_2_content": "グラスにストローをさすことができます。",
+    "dishesAndIce_3_title": "食器を洗う",
+    "dishesAndIce_3_content": "食器に汚れがついていたり、残り物がある場合、シンクに水を溜めて洗い流すことができます。",
+    "dishesAndIce_4_title": "氷",
+    "dishesAndIce_4_content": "グラスをアイスマシーンのボタンに近づけると氷がでてきます。",
+
+
+
+    "recipe": "レシピ",
+    
+    "coffeeHot": "ホットコーヒー",
+    "coffeeIced": "アイスコーヒー",
+    "option": "- オプション -",
+
+    "cupCoffee": "コーヒーカップ",
+    "cupEspresso": "エスプレッソカップ",
+    "cupGlass": "グラス",
+    "cupMug": "マグカップ",
+
+    "ice": "氷",
+    "espressoCaramel": "キャラメルシロップ付きエスプレッソ",
+    "waterHot": "お湯",
+    "waterCold": "冷え水",
+    "milk": "ミルク",
+    "milkLatte": "ラテ用フローティングミルク",
+    "milkCappuccino": "カプチーノ用フローティングミルク",
+    "powderCinamon": "シナモンパウダー",
+    "powderChocolate": "ココアパウダー",
+    "syrupCaramel": "キャラメルシロップ",
+    "syrupChocolate": "チョコレートシロップ",
+    "mocha_powderOrSyrup": "チョコレート\nシロップ/パウダー",
+
+
+
+    "config": "設定",
+    "config_resetPosition": "リセットポジション",
+    "config_all": "すべて",
+    "config_tools": "器具",
+    "config_cups": "カップ",
+    "config_ingredients": "材料",
+    "config_plates": "食器",
+
+
+
+    "info_contact_title": "連絡方法",
+    "info_contact_content": "もしアセットに関する質問やバグ報告がある場合、自分のDiscordへメッセージしてください。\n英語か韓国語でお願いします。"
+}
