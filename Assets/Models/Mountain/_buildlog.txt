@@ -1,0 +1,39 @@
+STARTLOG
+GAEA	1.3.2.7
+
+START	2024-04-08 20:32:45Z
+END	2024-04-08 20:35:50Z
+TOTAL	0:02:46
+SECONDS	166
+
+RESOLUTION	4096x4096
+BUCKET SIZE	4096x4096
+
+NODE	Mountain	11.954
+NODE	Mountain	0.000
+NODE	Transform	0.000
+NODE	ThermalShaper	0.000
+NODE	Rivers	29.452
+NODE	Mask	2.974
+NODE	Texture	30.381
+NODE	SatMaps	1.001
+NODE	FractalTerraces	0.000
+NODE	Slope	0.327
+NODE	Texture	28.669
+NODE	Combine	0.156
+NODE	Texture	33.935
+NODE	SatMaps	1.009
+NODE	Combine	0.661
+NODE	Normal Map	0.362
+NODE	Fx	0.051
+NODE	Worselands	0.000
+NODE	Badlands	16.641
+NODE	Rocky	0.000
+NODE	Combine	0.137
+NODE	AutoLevel	2.210
+NODE	Clamp	0.086
+NODE	Erosion	6.902
+NODE	Clamp	0.000
+
+OUTPUT	D:\3D works\1 new\Ocean Hut\Mountain
+ENDLOG

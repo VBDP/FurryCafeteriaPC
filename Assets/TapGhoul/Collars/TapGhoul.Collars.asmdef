@@ -1,0 +1,19 @@
+{
+  "name": "TapGhoul.Collars",
+  "references": [
+    "UdonSharp.Editor",
+    "UdonSharp.Lib",
+    "UdonSharp.Runtime",
+    "VRC.Udon",
+    "VRC.Udon.Serialization.OdinSerializer"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
