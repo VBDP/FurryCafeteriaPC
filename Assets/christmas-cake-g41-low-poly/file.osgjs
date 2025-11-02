@@ -1,0 +1,333 @@
+{
+  "Generator": "OpenSceneGraph 3.5.6",
+  "Version": 9,
+  "osg.Node": {
+    "Children": [ {
+      "osg.MatrixTransform": {
+        "UniqueID": 0,
+        "Name": "Christmas Cake.fbx",
+        "Children": [ {
+          "osg.MatrixTransform": {
+            "UniqueID": 2,
+            "Name": "RootNode",
+            "Children": [ {
+              "osg.MatrixTransform": {
+                "UniqueID": 3,
+                "Name": "Christmas Cake",
+                "Children": [ {
+                  "osg.Node": {
+                    "UniqueID": 4,
+                    "Name": "Christmas Cake",
+                    "Children": [ {
+                      "osg.Geometry": {
+                        "UniqueID": 5,
+                        "Name": "Christmas Cake_Christmas Cake_0",
+                        "PrimitiveSetList": [ {
+                          "DrawElementsUInt": {
+                            "UniqueID": 14,
+                            "Indices": {
+                              "UniqueID": 15,
+                              "Array": { 
+                                "Uint32Array": { 
+                                  "File": "model_file.binz",
+                                  "Size": 1811,
+                                  "Offset": 0,
+                                  "Encoding": "varint"
+                                }
+                              },
+                              "ItemSize": 1,
+                              "Type": "ELEMENT_ARRAY_BUFFER"
+                            },
+                            "Mode": "TRIANGLE_STRIP"
+                          }
+                        },
+                        {
+                          "DrawElementsUShort": {
+                            "UniqueID": 16,
+                            "Indices": {
+                              "UniqueID": 17,
+                              "Array": { 
+                                "Uint16Array": { 
+                                  "File": "model_file.binz",
+                                  "Size": 321,
+                                  "Offset": 2444,
+                                  "Encoding": "varint"
+                                }
+                              },
+                              "ItemSize": 1,
+                              "Type": "ELEMENT_ARRAY_BUFFER"
+                            },
+                            "Mode": "TRIANGLES"
+                          }
+                        } ],
+                        "StateSet": {
+                          "osg.StateSet": {
+                            "UniqueID": 6,
+                            "AttributeList": [ {
+                              "osg.Material": {
+                                "UniqueID": 8,
+                                "Name": "Christmas Cake",
+                                "Ambient": [ 0, 0, 0, 1],
+                                "Diffuse": [ 0.8, 0.8, 0.8, 1],
+                                "Emission": [ 0, 0, 0, 1],
+                                "Shininess": 36,
+                                "Specular": [ 0.2, 0.2, 0.2, 1]
+                              }
+                            } ],
+                            "UserDataContainer": {
+                              "UniqueID": 7,
+                              "Values": [ {
+                                "Name": "LambertAmbientColor",
+                                "Value": "[0.0508761, 0.0508761, 0.0508761]"
+                              },
+                              {
+                                "Name": "LambertAmbientFactor",
+                                "Value": "0"
+                              },
+                              {
+                                "Name": "LambertBumpFactor",
+                                "Value": "0"
+                              },
+                              {
+                                "Name": "LambertDiffuseColor",
+                                "Value": "[0.8, 0.8, 0.8]"
+                              },
+                              {
+                                "Name": "LambertDiffuseFactor",
+                                "Value": "1"
+                              },
+                              {
+                                "Name": "LambertEmissiveColor",
+                                "Value": "[0, 0, 0]"
+                              },
+                              {
+                                "Name": "LambertEmissiveFactor",
+                                "Value": "1"
+                              },
+                              {
+                                "Name": "LambertTransparencyFactor",
+                                "Value": "0"
+                              },
+                              {
+                                "Name": "PhongReflectionFactor",
+                                "Value": "0"
+                              },
+                              {
+                                "Name": "PhongShininess",
+                                "Value": "36"
+                              },
+                              {
+                                "Name": "PhongSpecularColor",
+                                "Value": "[0.8, 0.8, 0.8]"
+                              },
+                              {
+                                "Name": "PhongSpecularFactor",
+                                "Value": "0.25"
+                              },
+                              {
+                                "Name": "source",
+                                "Value": "fbx"
+                              },
+                              {
+                                "Name": "UniqueID",
+                                "Value": "1"
+                              } ]
+                            }
+                          }
+                        },
+                        "UserDataContainer": {
+                          "UniqueID": 9,
+                          "Values": [ {
+                            "Name": "attributes",
+                            "Value": "55"
+                          },
+                          {
+                            "Name": "vertex_bits",
+                            "Value": "12"
+                          },
+                          {
+                            "Name": "vertex_mode",
+                            "Value": "3"
+                          },
+                          {
+                            "Name": "uv_0_bits",
+                            "Value": "14"
+                          },
+                          {
+                            "Name": "uv_0_mode",
+                            "Value": "3"
+                          },
+                          {
+                            "Name": "epsilon",
+                            "Value": "0.25"
+                          },
+                          {
+                            "Name": "nphi",
+                            "Value": "720"
+                          },
+                          {
+                            "Name": "triangle_mode",
+                            "Value": "7"
+                          },
+                          {
+                            "Name": "vtx_bbl_x",
+                            "Value": "-2.08814"
+                          },
+                          {
+                            "Name": "vtx_bbl_y",
+                            "Value": "-2.10104"
+                          },
+                          {
+                            "Name": "vtx_bbl_z",
+                            "Value": "-0.0313361"
+                          },
+                          {
+                            "Name": "vtx_h_x",
+                            "Value": "0.00203528"
+                          },
+                          {
+                            "Name": "vtx_h_y",
+                            "Value": "0.00203528"
+                          },
+                          {
+                            "Name": "vtx_h_z",
+                            "Value": "0.00202327"
+                          },
+                          {
+                            "Name": "uv_0_bbl_x",
+                            "Value": "0"
+                          },
+                          {
+                            "Name": "uv_0_bbl_y",
+                            "Value": "0"
+                          },
+                          {
+                            "Name": "uv_0_h_x",
+                            "Value": "0.000120735"
+                          },
+                          {
+                            "Name": "uv_0_h_y",
+                            "Value": "0.000120752"
+                          } ]
+                        },
+                        "VertexAttributeList": {
+                          "Normal": {
+                            "UniqueID": 11,
+                            "Array": { 
+                              "Uint32Array": { 
+                                "File": "model_file.binz",
+                                "Size": 1338,
+                                "Offset": 2964,
+                                "Encoding": "varint"
+                              }
+                            },
+                            "ItemSize": 2,
+                            "Type": "ARRAY_BUFFER"
+                          },
+                          "Tangent": {
+                            "UniqueID": 13,
+                            "Array": { 
+                              "Uint32Array": { 
+                                "File": "model_file.binz",
+                                "Size": 1338,
+                                "Offset": 7592,
+                                "Encoding": "varint"
+                              }
+                            },
+                            "ItemSize": 2,
+                            "Type": "ARRAY_BUFFER"
+                          },
+                          "TexCoord0": {
+                            "UniqueID": 12,
+                            "Array": { 
+                              "Int32Array": { 
+                                "File": "model_file.binz",
+                                "Size": 1338,
+                                "Offset": 12352,
+                                "Encoding": "varint"
+                              }
+                            },
+                            "ItemSize": 2,
+                            "Type": "ARRAY_BUFFER"
+                          },
+                          "Vertex": {
+                            "UniqueID": 10,
+                            "Array": { 
+                              "Int32Array": { 
+                                "File": "model_file.binz",
+                                "Size": 1338,
+                                "Offset": 15844,
+                                "Encoding": "varint"
+                              }
+                            },
+                            "ItemSize": 3,
+                            "Type": "ARRAY_BUFFER"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "osg.Geometry": {
+                        "UniqueID": 18,
+                        "Name": "Christmas Cake_Christmas Cake_0",
+                        "PrimitiveSetList": [ {
+                          "DrawElementsUShort": {
+                            "UniqueID": 20,
+                            "Indices": {
+                              "UniqueID": 21,
+                              "Array": { 
+                                "Uint16Array": { 
+                                  "File": "model_file_wireframe.binz",
+                                  "Size": 6002,
+                                  "Offset": 0,
+                                  "Encoding": "varint"
+                                }
+                              },
+                              "ItemSize": 1,
+                              "Type": "ELEMENT_ARRAY_BUFFER"
+                            },
+                            "Mode": "LINES"
+                          }
+                        } ],
+                        "UserDataContainer": {
+                          "UniqueID": 19,
+                          "Values": [ {
+                            "Name": "wireframe",
+                            "Value": "1"
+                          },
+                          {
+                            "Name": "attributes",
+                            "Value": "1"
+                          } ]
+                        },
+                        "VertexAttributeList": {
+                          "Vertex": {
+                            "UniqueID": 10
+                          }
+                        }
+                      }
+                    } ]
+                  }
+                } ],
+                "Matrix": [ 100, 0, 0, 0, 0, -1.62921e-05, -100, 0, 0, 100, -1.62921e-05, 0, 0, 0, 0, 1 ]
+              }
+            } ],
+            "Matrix": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ]
+          }
+        } ],
+        "Matrix": [ 1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1 ],
+        "UserDataContainer": {
+          "UniqueID": 1,
+          "Values": [ {
+            "Name": "source",
+            "Value": "fbx"
+          },
+          {
+            "Name": "authoring_tool",
+            "Value": "Blender (stable FBX IO)"
+          } ]
+        }
+      }
+    } ]
+  }
+}
