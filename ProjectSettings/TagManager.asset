@@ -3,12 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Fregadero
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Fregadero
   - Water
   - UI
   - 
