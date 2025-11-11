@@ -1,0 +1,364 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FullEffect
+  m_Shader: {fileID: 4800000, guid: d8ad334bb75d97d40ac81db36c66aeb6, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - ABERRATION_QUALITY_MULTISAMPLING
+  - BLUR_HORIZONTAL
+  - CHROMATIC_ABERRATION_OFF
+  - MAGNIFICATION_OFF
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DistorsionTex:
+        m_Texture: {fileID: 2800000, guid: 71986e24cb3a9f544855a05bd1b513c0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DistortionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DistortionTex:
+        m_Texture: {fileID: 2800000, guid: 92dc4da0969f12e4c880955e1d8120b1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DitheringMask:
+        m_Texture: {fileID: 2800000, guid: 71986e24cb3a9f544855a05bd1b513c0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LiquidTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 77bacb75c6b76c94787eb6b135eefa8a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 2800000, guid: 71986e24cb3a9f544855a05bd1b513c0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OverlayTex:
+        m_Texture: {fileID: 2800000, guid: 94de0e5d0690df142851bc3b64190863, type: 3}
+        m_Scale: {x: 20, y: 20}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_f79745fc34984ef78b28f4b3849672b4_Texture_1_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ShakeTex:
+        m_Texture: {fileID: 2800000, guid: 71986e24cb3a9f544855a05bd1b513c0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: 71986e24cb3a9f544855a05bd1b513c0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TransitionTex:
+        m_Texture: {fileID: 2800000, guid: 4f479e763fe4c5646a6978e4d8280b3f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TrippyTex:
+        m_Texture: {fileID: 2800000, guid: 71986e24cb3a9f544855a05bd1b513c0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - ACES_Tonemapping: 0
+    - Aberration_Quality: 1
+    - Blur: 1
+    - Blur_Distorsion: 1
+    - CA_Distorsion: 0
+    - CTS: 0
+    - Chromatic_Aberration: 0
+    - Color_Tint: 0
+    - Distorsion: 1
+    - Dithering: 0
+    - Glitch: 0
+    - HSV_Desaturate_Selected: 1
+    - HSV_Selection: 0
+    - HSV_Transform: 0
+    - HUE: 0
+    - Magnification: 0
+    - Mask_Multisampling: 0
+    - Mask_Noise: 0
+    - Mask_Texture: 0
+    - Neon: 0
+    - Overlay_Grid: 1
+    - Overlay_Texture: 0
+    - Overlay_Texture_Sheet: 0
+    - Particle_Render: 0
+    - Pixelization: 0
+    - Posterization: 0
+    - ScreenRotation: 0
+    - Shake: 0
+    - Static_Noise: 0
+    - Texture_Distorsion: 0
+    - Vignette: 1
+    - Wave_Distorsion: 1
+    - _ActiveTime: 0.4
+    - _AdvancedGUI: 0
+    - _AngleStartFade: 0.25
+    - _BUILTIN_QueueControl: 0
+    - _BUILTIN_QueueOffset: 0
+    - _BlockGlitch: 0.25
+    - _BlockSize: 24
+    - _BlueInvert: 0
+    - _BlurAmount: 0
+    - _BlurIterations: 8
+    - _BlurMask: 0.5
+    - _BlurRange: 0.01
+    - _BlurRotation: 0
+    - _BlurRotationSpeed: 0
+    - _BrightnessFactor: 3
+    - _BumpScale: 1
+    - _CA_amplitude: 0.015
+    - _CA_factor: 1
+    - _CA_iterations: 8
+    - _CA_mask: 0.5
+    - _CA_speed: 0
+    - _CameraSize: 100
+    - _ChromaticAberration: 0.2
+    - _ChromaticAberrationAmount: 0.096
+    - _ColorAlpha: 0
+    - _ColorBoost: 1.02
+    - _Cutoff: 0.5
+    - _DIntensity_X: 0.01
+    - _DIntensity_Y: 0.01
+    - _DarknessFactor: 0.5
+    - _DetailNormalMapScale: 1
+    - _DistortionAlpha: 0.939
+    - _DistortionStrength: 10
+    - _DstBlend: 0
+    - _EdgeStrength: 4
+    - _EdgeThreshold: 0.002
+    - _Fold: 0
+    - _FollowPlayer: 1
+    - _Fullness: 0.5
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _GlowFactor: 1
+    - _Gravitation: 1
+    - _Grayscale: 0
+    - _GreenInvert: 0
+    - _Hue: 1
+    - _HueAnimationSpeed: 0
+    - _HueRange: 0.02
+    - _HueSmoothRange: 0.02
+    - _Lightness: 0
+    - _LightnessRange: 1
+    - _LightnessSmoothRange: 1
+    - _LineGlitch: 0.5
+    - _LiquidMovementSpeed: 1
+    - _Magnification: 0.1
+    - _MainGUI: 1
+    - _MaskAlpha: 0
+    - _MaskAmount: 0
+    - _MaxAngle: 0.5
+    - _MaxPlayers: 80
+    - _MaxRange: 10
+    - _Metallic: 0
+    - _MinRange: 2
+    - _Mode: 0
+    - _NeonBrightness: 3
+    - _NeonColorAlpha: 1
+    - _NeonGlow: 1
+    - _NeonOrigColorAlpha: 1
+    - _NeonPosterization: 1
+    - _NeonWidth: 1.5
+    - _OcclusionStrength: 1
+    - _OtherGUI: 0
+    - _OtherPlayersDotSize: 1
+    - _OverlayAnimationSpeed: 0.8
+    - _OverlayColumns: 4
+    - _OverlayOpacity: 0.01
+    - _OverlayOpaque: 0
+    - _OverlayRotation: 0
+    - _OverlayRows: 4
+    - _OverlayStartFrame: 0
+    - _OverlayTotalFrames: 16
+    - _OverlayTransparent: 0.97
+    - _PSize_X: 4
+    - _PSize_Y: 4
+    - _Parallax: 0.02
+    - _Period: 6
+    - _PlayerDotSize: 1
+    - _PosterizationSteps: 16
+    - _Pulsatepower: 0.5
+    - _Pulsatespeed: 0.5
+    - _Queue: 2000
+    - _ReadMask: 255
+    - _RedInvert: 0
+    - _Refraction: 0.1
+    - _SIntensity_X: 0.01
+    - _SIntensity_Y: 0.01
+    - _Saturation: 0
+    - _SaturationRange: 0.4
+    - _SaturationSmoothRange: 0.1
+    - _ScreenHorizontalFlip: 0
+    - _ScreenRotation: 0.1
+    - _ScreenRotationSpeed: 2
+    - _ScreenVerticalFlip: 0
+    - _ShowOthers: 0
+    - _SizeGirls: 0
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _StaticAlpha: 0.17
+    - _StaticBrightness: 1
+    - _StaticIntensity: -0.34
+    - _Stencil: 0
+    - _StencilComp: 0
+    - _StencilFail: 0
+    - _StencilOp: 0
+    - _StencilZFail: 0
+    - _TimeGirls: 1
+    - _Transition: 1
+    - _TransitionGUI: 1
+    - _TrippyIntensity: 0
+    - _UPS: 15
+    - _UVSec: 0
+    - _UseCustomQueue: 0
+    - _Vignette: 0.8
+    - _VignetteAlpha: 0.15
+    - _VignetteIntensity: 0
+    - _VignetteRounding: 0.5
+    - _VignetteShape: 0.5
+    - _VignetteWidth: 0.5
+    - _Vignettesmtf: 0.6
+    - _WaveAmplitude: 0.02
+    - _WaveFrequency: 10
+    - _WaveSpeed: 0.05
+    - _WriteMask: 255
+    - _ZWrite: 1
+    - _ZoomLevel: 3
+    - _alpha: 1
+    - _brightness: 1
+    - _fardisabledistance: 100
+    - _gColoralpha: 1
+    - _grspeed: 1
+    - _hla: 1
+    - _hue: 0
+    - _hueo: 0
+    - _hueoc: 0
+    - _huesaturation: 1
+    - _huespeed: 0
+    - _neardisabledistance: 1
+    - _tbrightness: 1
+    - _tgColoralpha: 1
+    - _tgrspeed: 1
+    - _tomoe: 1
+    - _tomoeprspeed: 1
+    - _tomoermoffset: 0
+    - _tomoerspeed: 0
+    - _ttomoe: 1
+    - _ttomoeprspeed: 1
+    - _ttomoermoffset: 0
+    - _ttomoerspeed: 0
+    m_Colors:
+    - _BlurCenterOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _BlurColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Brightness: {r: 1, g: 1, b: 1, a: 1}
+    - _CA_centerOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _CA_direction: {r: 1, g: 0, b: 0, a: 0}
+    - _Color: {r: 0.735849, g: 0, b: 0, a: 1}
+    - _Contrast: {r: 1, g: 1, b: 1, a: 1}
+    - _DistorsionScroll: {r: 0, g: 0, b: 0, a: 0}
+    - _DistorsionWave: {r: 0.01, g: 0.01, b: 1, a: 0}
+    - _DistorsionWaveDensity: {r: 8.4, g: 3, b: 1, a: 0}
+    - _DistorsionWaveSpeed: {r: 2.6, g: -3.1, b: 1, a: 0}
+    - _DistortionTiling: {r: 5, g: 5, b: 0, a: 0}
+    - _EdgeColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Gamma: {r: 1, g: 1, b: 1, a: 1}
+    - _HighlightColor: {r: 0, g: 0.77254903, b: 0.003921569, a: 1}
+    - _MaskColor: {r: 1, g: 1, b: 1, a: 0}
+    - _MaskScroll: {r: 0, g: 0, b: 0, a: 0}
+    - _NeonColor: {r: 1, g: 1, b: 1, a: 1}
+    - _NeonOrigColor: {r: 0.24999997, g: 0.24999997, b: 0.24999997, a: 1}
+    - _OtherPlayersDotColor: {r: 1, g: 1, b: 1, a: 1}
+    - _OverlayScroll: {r: 0.1, g: 0.1, b: 0, a: 0}
+    - _OverlayTiling: {r: 1, g: 1, b: 0, a: 0}
+    - _OverlayTint: {r: 0.9245283, g: 0, b: 0, a: 1}
+    - _PlayerDotColor: {r: 1, g: 1, b: 1, a: 1}
+    - _PlayerPos: {r: 0, g: 0, b: 0, a: 0}
+    - _ShakeScroll: {r: 2, g: 0.02, b: 0, a: 0}
+    - _ShakeWave: {r: 0.01, g: 0.01, b: 0, a: 0}
+    - _ShakeWaveSpeed: {r: 20, g: 19, b: 0, a: 0}
+    - _StaticColour: {r: 1, g: 1, b: 1, a: 1}
+    - _TargetColor: {r: 1, g: 0, b: 0, a: 1}
+    - _TintColor: {r: 0.34509805, g: 0.72156864, b: 0.72156864, a: 0.7372549}
+    - _TransformColor: {r: 0, g: 0, b: 1, a: 1}
+    - _TransitionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _VignetteColor: {r: 0, g: 0.13333334, b: 0.22745098, a: 1}
+    - _gColor: {r: 0.72, g: 0.67, b: 0.78999996, a: 1}
+    - _hlc: {r: 1, g: 1, b: 1, a: 1}
+    - _sColor: {r: 0.72, g: 0.67, b: 0.78999996, a: 1}
+    - _siColor: {r: 0.53999996, g: 0.5, b: 0.59, a: 1}
+    - _tgColor: {r: 0.72, g: 0.67, b: 0.78999996, a: 1}
+    - _tsColor: {r: 0.72, g: 0.67, b: 0.78999996, a: 1}
+    - _tsiColor: {r: 0.53999996, g: 0.5, b: 0.59, a: 1}
+  m_BuildTextureStacks: []
+--- !u!114 &3371493446834677741
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639247ca83abc874e893eb93af2b5e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 0
