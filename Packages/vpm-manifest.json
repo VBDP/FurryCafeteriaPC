@@ -24,11 +24,11 @@
     "dev.architech.videoplayershim": {
       "version": "1.4.0"
     },
-    "com.vrchat.worlds": {
-      "version": "3.9.0"
-    },
     "com.valenvrc.common": {
       "version": "2.3.0"
+    },
+    "com.mattshark.openflight": {
+      "version": "1.8.0"
     }
   },
   "locked": {
@@ -73,21 +73,27 @@
         "com.vrchat.worlds": "^3.3"
       }
     },
-    "com.vrchat.worlds": {
-      "version": "3.9.0",
-      "dependencies": {
-        "com.vrchat.base": "3.9.0"
-      }
-    },
-    "com.vrchat.base": {
-      "version": "3.9.0",
-      "dependencies": {}
-    },
     "com.valenvrc.common": {
       "version": "2.3.0",
       "dependencies": {
         "com.vrchat.worlds": "^3.8.1"
       }
+    },
+    "com.mattshark.openflight": {
+      "version": "1.8.0",
+      "dependencies": {
+        "com.vrchat.worlds": "3.4.1 - 3.8"
+      }
+    },
+    "com.vrchat.worlds": {
+      "version": "3.8.2",
+      "dependencies": {
+        "com.vrchat.base": "3.8.2"
+      }
+    },
+    "com.vrchat.base": {
+      "version": "3.8.2",
+      "dependencies": {}
     }
   }
 }
