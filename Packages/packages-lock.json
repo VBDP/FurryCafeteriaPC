@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "com.emymin.emychess": {
+      "version": "file:com.emymin.emychess",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.llealloo.audiolink": {
       "version": "file:com.llealloo.audiolink",
       "depth": 0,
@@ -195,12 +201,6 @@
         "com.unity.xr.management": "4.4.0"
       },
       "url": "https://packages.unity.com"
-    },
-    "com.valenvrc.common": {
-      "version": "file:com.valenvrc.common",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
     },
     "com.valenvrc.floating_tags": {
       "version": "file:com.valenvrc.floating_tags",
