@@ -202,12 +202,6 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.valenvrc.floating_tags": {
-      "version": "file:com.valenvrc.floating_tags",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
     "com.vrchat.base": {
       "version": "file:com.vrchat.base",
       "depth": 0,
