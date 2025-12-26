@@ -16,10 +16,11 @@ Material:
   - BAKERY_MONOSH
   - BAKERY_SHNONLINEAR
   - _BICUBIC_SAMPLING_ON
+  - _EMISSION
   - _NORMALMAP
   - _SPECGLOSSMAP
   m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2000
@@ -75,7 +76,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: a5996f8cfa34d5943a5c20bea639ea44, type: 3}
         m_Scale: {x: 6, y: 6}
         m_Offset: {x: 0, y: 0}
     - _EmissionMask:
@@ -351,7 +352,7 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DetailColor: {r: 1, g: 1, b: 1, a: 1}
     - _DetailScroll: {r: 0, g: 0, b: 0, a: 0}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0.754717, g: 0.754717, b: 0.754717, a: 1}
     - _RimCol: {r: 1, g: 1, b: 1, a: 1}
     - _ScatterCol: {r: 1, g: 1, b: 1, a: 1}
     - _TintReflShad: {r: 1, g: 1, b: 1, a: 1}
