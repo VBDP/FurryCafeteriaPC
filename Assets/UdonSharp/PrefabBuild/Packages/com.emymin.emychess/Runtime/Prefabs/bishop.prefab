@@ -168,6 +168,7 @@ MonoBehaviour:
   currentlyHeldBy: {fileID: 0}
   pickupable: 1
   proximity: 2
+  version: 0
 --- !u!114 &5728688325030918060
 MonoBehaviour:
   m_ObjectHideFlags: 0
