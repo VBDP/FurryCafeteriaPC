@@ -3,26 +3,8 @@
     "com.z3y.shaders": {
       "version": "3.3.0"
     },
-    "com.llealloo.audiolink": {
-      "version": "2.1.0"
-    },
-    "dev.architech.sdk": {
-      "version": "0.22.0"
-    },
-    "dev.architech.protv.extras": {
-      "version": "0.9.3-beta"
-    },
-    "com.mattshark.openflight": {
-      "version": "1.8.0"
-    },
     "com.emymin.emychess": {
       "version": "0.1.3"
-    },
-    "dev.architech.videoplayershim": {
-      "version": "1.5.0"
-    },
-    "dev.architech.protv": {
-      "version": "3.0.0-beta.29.4"
     },
     "dev.onevr.vrworldtoolkit": {
       "version": "3.3.2"
@@ -32,6 +14,24 @@
     },
     "com.vrchat.worlds": {
       "version": "3.10.1"
+    },
+    "dev.architech.protv": {
+      "version": "3.0.0-beta.29.4"
+    },
+    "dev.architech.videoplayershim": {
+      "version": "1.5.0"
+    },
+    "dev.architech.protv.extras": {
+      "version": "0.9.3-beta"
+    },
+    "dev.architech.umbrella": {
+      "version": "0.9.0"
+    },
+    "com.llealloo.audiolink": {
+      "version": "3.1.0"
+    },
+    "com.mattshark.openflight": {
+      "version": "1.8.1"
     }
   },
   "locked": {
@@ -39,44 +39,9 @@
       "version": "3.3.0",
       "dependencies": {}
     },
-    "com.llealloo.audiolink": {
-      "version": "2.1.0",
-      "dependencies": {}
-    },
-    "dev.architech.sdk": {
-      "version": "0.22.0",
-      "dependencies": {
-        "com.vrchat.worlds": "^3.4"
-      }
-    },
-    "dev.architech.protv.extras": {
-      "version": "0.9.3-beta",
-      "dependencies": {
-        "dev.architech.protv": ">=3.0.0-beta.24.1"
-      }
-    },
-    "com.mattshark.openflight": {
-      "version": "1.8.0",
-      "dependencies": {
-        "com.vrchat.worlds": "3.4.1 - 3.8"
-      }
-    },
     "com.emymin.emychess": {
       "version": "0.1.3",
       "dependencies": {}
-    },
-    "dev.architech.videoplayershim": {
-      "version": "1.5.0",
-      "dependencies": {
-        "com.vrchat.worlds": "^3.3"
-      }
-    },
-    "dev.architech.protv": {
-      "version": "3.0.0-beta.29.4",
-      "dependencies": {
-        "com.vrchat.worlds": "^3.4",
-        "dev.architech.sdk": ">=0.21.3 <1"
-      }
     },
     "dev.onevr.vrworldtoolkit": {
       "version": "3.3.2",
@@ -95,6 +60,48 @@
     "com.vrchat.base": {
       "version": "3.10.1",
       "dependencies": {}
+    },
+    "dev.architech.protv": {
+      "version": "3.0.0-beta.29.4",
+      "dependencies": {
+        "com.vrchat.worlds": "^3.4",
+        "dev.architech.sdk": ">=0.21.3 <1"
+      }
+    },
+    "dev.architech.sdk": {
+      "version": "0.22.0",
+      "dependencies": {
+        "com.vrchat.worlds": "^3.4"
+      }
+    },
+    "dev.architech.videoplayershim": {
+      "version": "1.5.0",
+      "dependencies": {
+        "com.vrchat.worlds": "^3.3"
+      }
+    },
+    "dev.architech.protv.extras": {
+      "version": "0.9.3-beta",
+      "dependencies": {
+        "dev.architech.protv": ">=3.0.0-beta.24.1"
+      }
+    },
+    "dev.architech.umbrella": {
+      "version": "0.9.0",
+      "dependencies": {
+        "com.vrchat.worlds": "^3.3",
+        "dev.architech.sdk": ">=0.22.0"
+      }
+    },
+    "com.llealloo.audiolink": {
+      "version": "3.1.0",
+      "dependencies": {}
+    },
+    "com.mattshark.openflight": {
+      "version": "1.8.1",
+      "dependencies": {
+        "com.vrchat.worlds": "3.4.1 - 3.10"
+      }
     }
   }
 }
