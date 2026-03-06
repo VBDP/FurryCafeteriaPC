@@ -58,6 +58,7 @@ public class Keypad : UdonSharpBehaviour
     private string _prefix;
     private bool adminsLoaded = false;
 
+    [SerializeField] private GameObject TeleportIfNotAdmin;
     private void Log(string msg)
     {
         if (!disableDebugging) Debug.Log(_prefix + msg);
@@ -67,6 +68,14 @@ public class Keypad : UdonSharpBehaviour
     {
         if (!disableDebugging) Debug.LogWarning(_prefix + msg);
     }
+
+    public override void OnPlayerJoined(VRCPlayerApi player)
+{
+    if (player.isLocal)
+    {
+        UpdateAllowCollider();
+    }
+}
 
     public void Start()
     {
@@ -156,11 +165,9 @@ public class Keypad : UdonSharpBehaviour
 
     private void UpdateAllowCollider()
     {
-        if (allowListCollider == null) return;
+        if (Networking.LocalPlayer == null) return;
 
-        var username = Networking.LocalPlayer == null
-            ? "UnityEditor"
-            : Networking.LocalPlayer.displayName;
+        var username = Networking.LocalPlayer.displayName;
 
         bool allowed = false;
 
@@ -173,7 +180,15 @@ public class Keypad : UdonSharpBehaviour
             }
         }
 
-        allowListCollider.enabled = allowed;
+        // Activar o desactivar el collider de allow
+        if (allowListCollider != null)
+            allowListCollider.enabled = allowed;
+
+        // 🔹 NUEVO: Desactivar TP si es admin
+        if (TeleportIfNotAdmin != null)
+            TeleportIfNotAdmin.SetActive(!allowed);
+
+        Log("Is Admin: " + allowed);
     }
 
     // =========================
