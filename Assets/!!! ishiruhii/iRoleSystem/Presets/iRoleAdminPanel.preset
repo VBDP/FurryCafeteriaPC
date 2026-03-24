@@ -1,0 +1,526 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: iRoleAdminPanel
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: e474e57316fe3c548882da679f7b91b8,
+      type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: serializationData.SerializedFormat
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: serializationData.SerializedBytes.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: serializationData.ReferencedUnityObjects.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: serializationData.SerializedBytesString
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: serializationData.Prefab
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: serializationData.PrefabModifications.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: serializationData.SerializationNodes.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _udonSharpBackingUdonBehaviour
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: core
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: roleManager
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: roleDatabase
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: languageSystem
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: adminNames.Array.size
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: adminNames.Array.data[0]
+    value: RAFAOwO
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: maxSlotsPerAdmin
+    value: 8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perAdminRoleIds.Array.size
+    value: 8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perAdminRoleIds.Array.data[0]
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perAdminRoleIds.Array.data[1]
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perAdminRoleIds.Array.data[2]
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perAdminRoleIds.Array.data[3]
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perAdminRoleIds.Array.data[4]
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perAdminRoleIds.Array.data[5]
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perAdminRoleIds.Array.data[6]
+    value: 6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perAdminRoleIds.Array.data[7]
+    value: 7
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perAdminPrefabs.Array.size
+    value: 8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perAdminPrefabs.Array.data[0]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perAdminPrefabs.Array.data[1]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perAdminPrefabs.Array.data[2]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perAdminPrefabs.Array.data[3]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perAdminPrefabs.Array.data[4]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perAdminPrefabs.Array.data[5]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perAdminPrefabs.Array.data[6]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perAdminPrefabs.Array.data[7]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: defaultButtonPrefab
+    value: 
+    objectReference: {fileID: 8506928372041774025, guid: 74835b33ca0c9a44c821154e231219e7,
+      type: 3}
+  - target: {fileID: 0}
+    propertyPath: allowMasterAccess
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: allowedRoleIds.Array.size
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: allowedRoleIds.Array.data[0]
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: allowedRoleIds.Array.data[1]
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: allowedRoleIds.Array.data[2]
+    value: 6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: maxSlotsPerRole
+    value: 8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.size
+    value: 24
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.data[0]
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.data[1]
+    value: 7
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.data[2]
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.data[3]
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.data[4]
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.data[5]
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.data[6]
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.data[7]
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.data[8]
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.data[9]
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.data[10]
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.data[11]
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.data[12]
+    value: 7
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.data[13]
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.data[14]
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.data[15]
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.data[16]
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.data[17]
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.data[18]
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.data[19]
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.data[20]
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.data[21]
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.data[22]
+    value: 6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.data[23]
+    value: 7
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.size
+    value: 24
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.data[0]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.data[1]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.data[2]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.data[3]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.data[4]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.data[5]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.data[6]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.data[7]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.data[8]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.data[9]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.data[10]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.data[11]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.data[12]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.data[13]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.data[14]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.data[15]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.data[16]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.data[17]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.data[18]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.data[19]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.data[20]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.data[21]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.data[22]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.data[23]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: canvasRoot
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: roleButtonsContainer
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: targetPlayerInput
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: feedbackText
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: playerInfoText
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: playerSelectorCanvas
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: playerButtonsContainer
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: playerSelectorButtonPrefab
+    value: 
+    objectReference: {fileID: 8506928372041774025, guid: f5224722437129a4c88c9cb2837d34b5,
+      type: 3}
+  - target: {fileID: 0}
+    propertyPath: autoRefreshOnOpen
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: maxPlayerButtons
+    value: 80
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: enableKeyToggle
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: pcToggleKey
+    value: 50
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: questToggleButton
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: positionInFrontOfPlayer
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: canvasDistance
+    value: 0.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: canvasHeightOffset
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: canvasExtraRotation.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: canvasExtraRotation.y
+    value: 180
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: canvasExtraRotation.z
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: canvasScale.x
+    value: 0.03
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: canvasScale.y
+    value: 0.03
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: canvasScale.z
+    value: 0.03
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: openSound
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: assignSound
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: errorSound
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: closeSound
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: maxButtons
+    value: 60
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: clearInputOnClose
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: showPlayerInfoOnType
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: infoUpdateInterval
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: autoCloseAfterAssign
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: autoCloseDelay
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: debugMode
+    value: 0
+    objectReference: {fileID: 0}
+  m_ExcludedProperties: []

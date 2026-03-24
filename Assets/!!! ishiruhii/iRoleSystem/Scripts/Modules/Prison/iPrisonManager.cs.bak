@@ -1,0 +1,229 @@
+// ============================================================================
+// iRoleSystem v4.0.5 - Prison Module
+// Author: ishiruhii
+// Description: Sistema de cárcel para confinar jugadores según su rol
+// ============================================================================
+
+using UdonSharp;
+using UnityEngine;
+using VRC.SDKBase;
+
+namespace ishiruhii.iRoleSystem.Modules.Prison
+{
+    using ishiruhii.iRoleSystem.Core;
+
+    /// <summary>
+    /// Sistema de cárcel que confina a jugadores con roles específicos
+    /// dentro de un área definida, teletransportándolos si intentan escapar.
+    /// </summary>
+    [UdonBehaviourSyncMode(BehaviourSyncMode.None)]
+    public class iPrisonManager : UdonSharpBehaviour
+    {
+        [Header("Referencias del Sistema")]
+        [Tooltip("Referencia al gestor de roles")]
+        public iPlayerRoleManager playerRoleManager;
+
+        [Tooltip("Referencia a la base de datos de roles")]
+        public iRoleDatabase roleDatabase;
+
+        [Header("Configuración de la Cárcel")]
+        [Tooltip("Collider que define el área de la cárcel")]
+        public Collider prisonArea;
+
+        [Tooltip("Punto de teletransporte dentro de la cárcel")]
+        public Transform teleportPoint;
+
+        [Header("Roles Afectados")]
+        [Tooltip("Qué roles son enviados/confinados a la cárcel")]
+        public bool[] affectedRoles;
+
+        [Header("Configuración de Chequeo")]
+        [Tooltip("Intervalo de chequeo de posición (segundos)")]
+        public float positionCheckInterval = 1f;
+
+        [Tooltip("Activar chequeo dinámico de rol")]
+        public bool enableDynamicRoleCheck = true;
+
+        [Tooltip("Intervalo de chequeo de rol (segundos)")]
+        public float roleCheckInterval = 3f;
+
+        [Header("Efectos")]
+        [Tooltip("Sonido al teletransportar")]
+        public AudioSource teleportSound;
+
+        [Tooltip("Partículas al teletransportar")]
+        public ParticleSystem teleportParticles;
+
+        // Estado interno
+        private VRCPlayerApi localPlayer;
+        private int currentRole = -1;
+        private bool isConfined = false;
+        private bool initialTeleportDone = false;
+
+        private void Start()
+        {
+            localPlayer = Networking.LocalPlayer;
+
+            if (localPlayer == null) return;
+
+            // Obtener rol inicial
+            currentRole = GetLocalPlayerRole();
+
+            // Iniciar chequeos
+            SendCustomEventDelayedSeconds(nameof(CheckPosition), 0.5f);
+
+            if (enableDynamicRoleCheck)
+            {
+                SendCustomEventDelayedSeconds(nameof(CheckRoleUpdate), roleCheckInterval);
+            }
+        }
+
+        /// <summary>
+        /// Chequea si el jugador debe estar confinado y si está en el área
+        /// </summary>
+        public void CheckPosition()
+        {
+            if (localPlayer == null || prisonArea == null)
+            {
+                SendCustomEventDelayedSeconds(nameof(CheckPosition), positionCheckInterval);
+                return;
+            }
+
+            bool shouldBeConfined = IsRoleAffected(currentRole);
+
+            if (shouldBeConfined)
+            {
+                // Primera vez que se detecta que debe estar confinado
+                if (!initialTeleportDone)
+                {
+                    ExecuteTeleport();
+                    initialTeleportDone = true;
+                    isConfined = true;
+                }
+                // Ya está confinado pero salió del área
+                else if (!IsPlayerInPrisonArea())
+                {
+                    ExecuteTeleport();
+                }
+            }
+            else
+            {
+                // Ya no debe estar confinado
+                isConfined = false;
+                initialTeleportDone = false;
+            }
+
+            SendCustomEventDelayedSeconds(nameof(CheckPosition), positionCheckInterval);
+        }
+
+        /// <summary>
+        /// Actualiza el rol del jugador local periódicamente
+        /// </summary>
+        public void CheckRoleUpdate()
+        {
+            int newRole = GetLocalPlayerRole();
+
+            if (newRole != currentRole)
+            {
+                currentRole = newRole;
+
+                // Si el nuevo rol requiere confinamiento, resetear flag
+                if (IsRoleAffected(currentRole) && !isConfined)
+                {
+                    initialTeleportDone = false;
+                }
+            }
+
+            SendCustomEventDelayedSeconds(nameof(CheckRoleUpdate), roleCheckInterval);
+        }
+
+        /// <summary>
+        /// Callback para evento de cambio de rol
+        /// </summary>
+        [HideInInspector] public int _lastChangedPlayerId;
+        [HideInInspector] public int _lastChangedRole;
+
+        public void _OnPlayerRoleChanged()
+        {
+            if (localPlayer != null && _lastChangedPlayerId == localPlayer.playerId)
+            {
+                currentRole = _lastChangedRole;
+
+                if (IsRoleAffected(currentRole) && !isConfined)
+                {
+                    initialTeleportDone = false;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Fuerza el teletransporte a la cárcel
+        /// </summary>
+        public void ForceTeleportToPrison()
+        {
+            ExecuteTeleport();
+        }
+
+        /// <summary>
+        /// Libera al jugador (permite salir)
+        /// </summary>
+        public void ReleasePlayer()
+        {
+            isConfined = false;
+            initialTeleportDone = false;
+        }
+
+        private int GetLocalPlayerRole()
+        {
+            if (playerRoleManager == null || localPlayer == null)
+                return -1;
+
+            return playerRoleManager.GetPlayerRole(localPlayer.playerId);
+        }
+
+        private bool IsRoleAffected(int roleIndex)
+        {
+            if (affectedRoles == null) return false;
+            if (roleIndex < 0 || roleIndex >= affectedRoles.Length) return false;
+
+            return affectedRoles[roleIndex];
+        }
+
+        private bool IsPlayerInPrisonArea()
+        {
+            if (prisonArea == null || localPlayer == null) return true;
+
+            return prisonArea.bounds.Contains(localPlayer.GetPosition());
+        }
+
+        private void ExecuteTeleport()
+        {
+            if (teleportPoint == null || localPlayer == null) return;
+
+            // Efectos
+            if (teleportSound != null)
+            {
+                teleportSound.Play();
+            }
+
+            if (teleportParticles != null)
+            {
+                teleportParticles.Play();
+            }
+
+            // Teletransportar
+            localPlayer.TeleportTo(
+                teleportPoint.position,
+                teleportPoint.rotation
+            );
+        }
+
+        /// <summary>
+        /// Obtiene si el jugador está actualmente confinado
+        /// </summary>
+        public bool IsCurrentlyConfined()
+        {
+            return isConfined;
+        }
+    }
+}

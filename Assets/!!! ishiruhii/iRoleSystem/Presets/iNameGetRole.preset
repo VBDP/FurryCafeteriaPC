@@ -1,0 +1,365 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: iNameGetRole
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: d69aca0722df7144883aa3105441d155,
+      type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: serializationData.SerializedFormat
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: serializationData.SerializedBytes.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: serializationData.ReferencedUnityObjects.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: serializationData.SerializedBytesString
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: serializationData.Prefab
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: serializationData.PrefabModifications.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: serializationData.SerializationNodes.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _udonSharpBackingUdonBehaviour
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: core
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: roleManager
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: roleDatabase
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: languageSystem
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: playerNames.Array.size
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: playerNames.Array.data[0]
+    value: ishiruhii
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: playerNames.Array.data[1]
+    value: Diegodc57
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: playerNames.Array.data[2]
+    value: jaocrkge
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: maxSlotsPerPlayer
+    value: 8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.size
+    value: 24
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.data[0]
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.data[1]
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.data[2]
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.data[3]
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.data[4]
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.data[5]
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.data[6]
+    value: 6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.data[7]
+    value: 7
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.data[8]
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.data[9]
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.data[10]
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.data[11]
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.data[12]
+    value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.data[13]
+    value: 5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.data[14]
+    value: 6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.data[15]
+    value: 7
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.data[16]
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.data[17]
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.data[18]
+    value: 2
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.data[19]
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.data[20]
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.data[21]
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.data[22]
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerRoleIds.Array.data[23]
+    value: -1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.size
+    value: 24
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.data[0]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.data[1]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.data[2]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.data[3]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.data[4]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.data[5]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.data[6]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.data[7]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.data[8]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.data[9]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.data[10]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.data[11]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.data[12]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.data[13]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.data[14]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.data[15]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.data[16]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.data[17]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.data[18]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.data[19]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.data[20]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.data[21]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.data[22]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perPlayerPrefabs.Array.data[23]
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: defaultRolePrefab
+    value: 
+    objectReference: {fileID: 8506928372041774025, guid: cf4f2dbbdff6f2b4eb1224e65707b262,
+      type: 3}
+  - target: {fileID: 0}
+    propertyPath: allowedRoleIds.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: maxSlotsPerRole
+    value: 8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonIds.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: perRoleButtonPrefabs.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: roleSelectionCanvas
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: roleButtonsContainer
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: allowMasterAccess
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: menuOpenSound
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: roleAssignedSound
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: accessDeniedSound
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: feedbackText
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: roleCheckInterval
+    value: 0.1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: roleDisplayText
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: debugMode
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: maxButtons
+    value: 10
+    objectReference: {fileID: 0}
+  m_ExcludedProperties: []
