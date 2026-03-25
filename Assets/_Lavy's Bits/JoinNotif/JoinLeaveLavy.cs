@@ -18,6 +18,9 @@ public class JoinLeaveLavy : UdonSharpBehaviour
 
     public ParticleSystem partJoin;
     public ParticleSystem partLeave;
+    public AudioSource audioSource;
+    public AudioClip joinClip;
+    public AudioClip leaveClip;
     public override void OnPlayerJoined(VRCPlayerApi player)
     {
         pname.text = player.displayName;
@@ -27,6 +30,7 @@ public class JoinLeaveLavy : UdonSharpBehaviour
         theThingy.position = theThingy.position + theThingy.forward;
         partJoin.Play();
         anim.SetTrigger("cum");
+        audioSource.PlayOneShot(joinClip);
     }
 
     public override void OnPlayerLeft(VRCPlayerApi player)
@@ -38,5 +42,6 @@ public class JoinLeaveLavy : UdonSharpBehaviour
         theThingy.position = theThingy.position + theThingy.forward;
         partLeave.Play();
         anim.SetTrigger("cum");
+        audioSource.PlayOneShot(leaveClip);
     }
 }
