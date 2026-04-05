@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using VRC.SDKBase;
 using VRC.SDK3.StringLoading;
 
-// ReSharper disable once CheckNamespace
 public class Keypad : UdonSharpBehaviour
 {
     private readonly string AUTHOR = "Foorack";
@@ -50,15 +49,42 @@ public class Keypad : UdonSharpBehaviour
     public GameObject[] additionalDoorObjects = new GameObject[0];
     public bool additionalKeySeparation = false;
 
-    // runtime
     private string _buffer;
     private string[] _solutions;
     private GameObject[] _doors;
 
     private string _prefix;
-    private bool adminsLoaded = false;
 
     [SerializeField] private GameObject TeleportIfNotAdmin;
+
+    // =========================
+    // UTILS
+    // =========================
+
+    private bool IsUserInList(string[] list, string username)
+    {
+        string user = username.ToLower();
+
+        foreach (var entry in list)
+        {
+            if (entry.Trim().ToLower() == user)
+                return true;
+        }
+        return false;
+    }
+
+    public bool IsLocalPlayerAdmin()
+    {
+        if (Networking.LocalPlayer == null) return false;
+
+        string username = Networking.LocalPlayer.displayName;
+
+        bool isOnAllow = IsUserInList(allowList, username);
+        bool isOnDeny = IsUserInList(denyList, username);
+
+        return isOnAllow && !isOnDeny;
+    }
+
     private void Log(string msg)
     {
         if (!disableDebugging) Debug.Log(_prefix + msg);
@@ -69,13 +95,15 @@ public class Keypad : UdonSharpBehaviour
         if (!disableDebugging) Debug.LogWarning(_prefix + msg);
     }
 
+    // =========================
+    // UNITY EVENTS
+    // =========================
+
     public override void OnPlayerJoined(VRCPlayerApi player)
-{
-    if (player.isLocal)
     {
-        UpdateAllowCollider();
+        if (player.isLocal)
+            UpdateAllowCollider();
     }
-}
 
     public void Start()
     {
@@ -109,7 +137,7 @@ public class Keypad : UdonSharpBehaviour
     }
 
     // =========================
-    // ADMIN LIST LOADING
+    // ADMIN LIST
     // =========================
 
     public void LoadAdminList()
@@ -121,7 +149,6 @@ public class Keypad : UdonSharpBehaviour
             return;
         }
 
-        // use offline first (instant)
         if (offlineAdminsJSON != null)
             ParseAdminJSON(offlineAdminsJSON.text);
 
@@ -150,41 +177,26 @@ public class Keypad : UdonSharpBehaviour
                    .Replace("\n", "")
                    .Replace("\r", "");
 
-        allowList = json.Split(',');
+        string[] raw = json.Split(',');
+        allowList = new string[raw.Length];
 
-        adminsLoaded = true;
+        for (int i = 0; i < raw.Length; i++)
+            allowList[i] = raw[i].Trim();
+
         UpdateAllowCollider();
 
         Log("Admins loaded count: " + allowList.Length);
-
-        foreach (var entry in allowList)
-        {
-            Log("Admin: " + entry);
-        }
     }
 
     private void UpdateAllowCollider()
     {
         if (Networking.LocalPlayer == null) return;
 
-        var username = Networking.LocalPlayer.displayName;
+        bool allowed = IsLocalPlayerAdmin();
 
-        bool allowed = false;
-
-        foreach (var entry in allowList)
-        {
-            if (entry.Trim() == username)
-            {
-                allowed = true;
-                break;
-            }
-        }
-
-        // Activar o desactivar el collider de allow
         if (allowListCollider != null)
             allowListCollider.enabled = allowed;
 
-        // 🔹 NUEVO: Desactivar TP si es admin
         if (TeleportIfNotAdmin != null)
             TeleportIfNotAdmin.SetActive(!allowed);
 
@@ -192,7 +204,7 @@ public class Keypad : UdonSharpBehaviour
     }
 
     // =========================
-    // KEYPAD LOGIC
+    // KEYPAD
     // =========================
 
     private void CLR()
@@ -208,16 +220,11 @@ public class Keypad : UdonSharpBehaviour
 
     private void OK()
     {
-        var username = Networking.LocalPlayer == null ? "UnityEditor" : Networking.LocalPlayer.displayName;
+        string username = Networking.LocalPlayer == null ? "UnityEditor" : Networking.LocalPlayer.displayName;
 
-        bool isOnAllow = false;
-        bool isOnDeny = false;
-
-        foreach (var entry in allowList)
-            if (entry.Trim() == username) isOnAllow = true;
-
-        foreach (var entry in denyList)
-            if (entry.Trim() == username) isOnDeny = true;
+        bool isOnAllow = IsUserInList(allowList, username);
+        bool isOnDeny = IsUserInList(denyList, username);
+        bool canUse = isOnAllow && !isOnDeny;
 
         bool isCorrect = false;
         GameObject correctDoor = null;
@@ -232,7 +239,7 @@ public class Keypad : UdonSharpBehaviour
             }
         }
 
-        if ((isCorrect && !isOnDeny) || isOnAllow)
+        if (isCorrect && canUse)
         {
             internalKeypadDisplay.text = translationGranted;
 

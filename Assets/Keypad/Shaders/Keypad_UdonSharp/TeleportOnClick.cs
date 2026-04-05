@@ -7,15 +7,18 @@ public class TeleportOnClick : UdonSharpBehaviour
 {
     [Header("Punto de destino")]
     public Transform destino;
+    public Keypad keypad;
 
     public override void Interact()
     {
         VRCPlayerApi player = Networking.LocalPlayer;
 
-        if (player == null || destino == null)
+        if (player == null || destino == null || keypad == null)
             return;
 
-        // Teletransportar al jugador local
+        if (!keypad.IsLocalPlayerAdmin())
+            return;
+
         player.TeleportTo(destino.position, destino.rotation);
     }
 }
