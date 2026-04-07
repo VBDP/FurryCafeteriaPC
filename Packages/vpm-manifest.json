@@ -6,9 +6,6 @@
     "com.emymin.emychess": {
       "version": "0.1.3"
     },
-    "dev.onevr.vrworldtoolkit": {
-      "version": "3.3.2"
-    },
     "com.vrchat.core.vpm-resolver": {
       "version": "0.1.29"
     },
@@ -27,11 +24,14 @@
     "dev.architech.umbrella": {
       "version": "0.9.0"
     },
-    "com.llealloo.audiolink": {
-      "version": "3.1.0"
-    },
     "com.mattshark.openflight": {
       "version": "1.8.1"
+    },
+    "dev.onevr.vrworldtoolkit": {
+      "version": "3.3.2"
+    },
+    "com.llealloo.audiolink": {
+      "version": "3.1.0"
     }
   },
   "locked": {
@@ -41,10 +41,6 @@
     },
     "com.emymin.emychess": {
       "version": "0.1.3",
-      "dependencies": {}
-    },
-    "dev.onevr.vrworldtoolkit": {
-      "version": "3.3.2",
       "dependencies": {}
     },
     "com.vrchat.core.vpm-resolver": {
@@ -93,15 +89,19 @@
         "dev.architech.sdk": ">=0.22.0"
       }
     },
-    "com.llealloo.audiolink": {
-      "version": "3.1.0",
-      "dependencies": {}
-    },
     "com.mattshark.openflight": {
       "version": "1.8.1",
       "dependencies": {
         "com.vrchat.worlds": "3.4.1 - 3.10"
       }
+    },
+    "dev.onevr.vrworldtoolkit": {
+      "version": "3.3.2",
+      "dependencies": {}
+    },
+    "com.llealloo.audiolink": {
+      "version": "3.1.0",
+      "dependencies": {}
     }
   }
 }
