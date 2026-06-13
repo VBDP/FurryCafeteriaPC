@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WhiskeyBottleLiquid
+  m_Shader: {fileID: 4800000, guid: 7cd98e8d2599127449acb8b229da7c01, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _BLENDMODE_MULTIPLY
+  - _TOPBLENDMODE_MULTIPLY
+  - _USEBACKSIDE_ON
+  - _USEFRONTSIDE_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _AmountRate: 0.5
+    - _BackDstBlend: 0
+    - _BackSrcBlend: 1
+    - _BlendMode: 0
+    - _DstBlend: 0
+    - _LiquidHeight: 0.25
+    - _MinAmountRate: 0
+    - _ReflectionStrength: 0.257
+    - _Rim: 0.0004
+    - _RimPower: 2.4
+    - _SrcBlend: 1
+    - _StopSrcBlend: 1
+    - _TopBlendMode: 0
+    - _TopDstBlend: 0
+    - _TopSrcBlend: 2
+    - _WobbleX: 0
+    - _WobbleZ: 0
+    m_Colors:
+    - _Color: {r: 0.38679248, g: 0.093168996, b: 0, a: 0.9411765}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FoamColor: {r: 0.8207547, g: 0.46739492, b: 0, a: 0.8509804}
+    - _RimColor: {r: 0.764151, g: 0.3836937, b: 0, a: 0.8509804}
+    - _TopColor: {r: 0.7075472, g: 0.3016039, b: 0.1768868, a: 0.9372549}
+  m_BuildTextureStacks: []
