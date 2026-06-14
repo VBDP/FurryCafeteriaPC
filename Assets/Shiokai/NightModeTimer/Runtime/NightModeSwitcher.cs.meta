@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: f6d9d09ceff804947a322710425d2dac
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - dayKnob: {instanceID: 0}
+  - nightKnob: {instanceID: 0}
+  - nightImage: {instanceID: 0}
+  - dayTimeDisplay: {instanceID: 0}
+  - nightTimeDisplay: {instanceID: 0}
+  - currentTimeDisplay: {instanceID: 0}
+  - currentTimePoint: {instanceID: 0}
+  - nightModeRenderer: {instanceID: 0}
+  - directionalLight: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
