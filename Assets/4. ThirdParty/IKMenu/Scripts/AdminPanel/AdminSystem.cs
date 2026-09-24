@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using UdonSharp;
 using UnityEngine;
@@ -212,7 +212,8 @@ public class AdminSystem : UdonSharpBehaviour
 
     private void _ProcessCall(string receivedCall)
     {
-        if(receivedCall[0] != '¤') return;
+        if (string.IsNullOrEmpty(receivedCall)) return;
+        if (receivedCall[0] != '¤') return;
 
         receivedCall = receivedCall.Remove(0,1);
 
@@ -222,7 +223,8 @@ public class AdminSystem : UdonSharpBehaviour
         int playerId = -1;
 
         Debug.Log(receivedCall);
-        Debug.Log($"{callParams[0]}");
+        if (callParams.Length > 0)
+            Debug.Log($"{callParams[0]}");
 
         if (callParams.Length >= 5 && int.TryParse(callParams[0], out playerId) && _CheckAllowedAdmin(callParams[1]))
         {
@@ -241,7 +243,8 @@ public class AdminSystem : UdonSharpBehaviour
                     if (Utilities.IsValid(player) && player.displayName == callParams[1])
                     {
                         //Debug.Log("Received Valid Call : " + receivedCall);
-                        _ExecuteMethod(callParams[2], callParams[3], callParams[5], playerFromId);
+                        string parameters = callParams.Length > 5 ? callParams[5] : "";
+                        _ExecuteMethod(callParams[2], callParams[3], parameters, playerFromId);
                     }
                 }
             }
@@ -258,9 +261,13 @@ public class AdminSystem : UdonSharpBehaviour
             {
                 if (Utilities.IsValid(player) && player.isMaster)
                 {
-                    rc4key = player.displayName+key.text;
+                    rc4key = player.displayName + (key != null ? key.text : "");
                     break;
                 }
+            }
+            if (rc4key == null)
+            {
+                rc4key = key != null ? key.text : "default_key";
             }
         }
 
@@ -389,12 +396,15 @@ public class AdminSystem : UdonSharpBehaviour
                 if (target == Networking.LocalPlayer.displayName)
                 {
                     Networking.LocalPlayer.Immobilize(true);
-                    hud._ShowNotification(1,freezeText);
-                    FlySystem.SetActive(false);
+                    if (hud != null) hud._ShowNotification(1, freezeText);
+                    if (FlySystem != null) FlySystem.SetActive(false);
 
-                    foreach (var chair in chairs)
+                    if (chairs != null)
                     {
-                        chair.SetActive(false);
+                        foreach (var chair in chairs)
+                        {
+                            if (chair != null) chair.SetActive(false);
+                        }
                     }
                 }
                 break;
@@ -402,11 +412,24 @@ public class AdminSystem : UdonSharpBehaviour
                 if (target == Networking.LocalPlayer.displayName)
                 {
                     Networking.LocalPlayer.Immobilize(false);
-                    hud._ShowNotification(0, unfreezeText);
-                    FlySystem.SetActive(true);
-                    foreach (var chair in chairs)
+                    if (Networking.LocalPlayer.GetWalkSpeed() <= 0f)
                     {
-                        chair.SetActive(true);
+                        Networking.LocalPlayer.SetWalkSpeed(2f);
+                        Networking.LocalPlayer.SetRunSpeed(4f);
+                        Networking.LocalPlayer.SetStrafeSpeed(2f);
+                    }
+                    if (Networking.LocalPlayer.GetJumpImpulse() <= 0f)
+                    {
+                        Networking.LocalPlayer.SetJumpImpulse(3f);
+                    }
+                    if (hud != null) hud._ShowNotification(0, unfreezeText);
+                    if (FlySystem != null) FlySystem.SetActive(true);
+                    if (chairs != null)
+                    {
+                        foreach (var chair in chairs)
+                        {
+                            if (chair != null) chair.SetActive(true);
+                        }
                     }
                 }
                 break;
@@ -422,7 +445,7 @@ public class AdminSystem : UdonSharpBehaviour
                     }
                     else
                     {
-                        hud._ShowNotification(1, muteText);
+                        if (hud != null) hud._ShowNotification(1, muteText);
                     }
                     
                 }
@@ -439,14 +462,14 @@ public class AdminSystem : UdonSharpBehaviour
                     }
                     else
                     {
-                        hud._ShowNotification(0, unmuteText);
+                        if (hud != null) hud._ShowNotification(0, unmuteText);
                     }
                 }
                 break;
             case "warn":
                 if (target == Networking.LocalPlayer.displayName)
                 {
-                    hud._ShowNotification(1, warnText);
+                    if (hud != null) hud._ShowNotification(1, warnText);
                 }
                 break;
             case "avatar":
@@ -454,7 +477,7 @@ public class AdminSystem : UdonSharpBehaviour
                 {
                     if (Utilities.IsValid(player))
                     {
-                        if (!avatarPedestal)
+                        if (!avatarPedestal && prefab != null)
                         {
                             avatarPedestal = Instantiate(prefab).GetComponent<VRC_AvatarPedestal>();
                         }
@@ -496,16 +519,22 @@ public class AdminSystem : UdonSharpBehaviour
                     if (spyPlayer == player)
                     {
                         spyPlayer = null;
-                        screen.SetActive(false);
-                        cam.gameObject.SetActive(false);
-                        cam.enabled = false;
+                        if (screen != null) screen.SetActive(false);
+                        if (cam != null)
+                        {
+                            cam.gameObject.SetActive(false);
+                            cam.enabled = false;
+                        }
                     }
                     else
                     {
                         spyPlayer = player;
-                        screen.SetActive(true);
-                        cam.gameObject.SetActive(true);
-                        cam.enabled = true;
+                        if (screen != null) screen.SetActive(true);
+                        if (cam != null)
+                        {
+                            cam.gameObject.SetActive(true);
+                            cam.enabled = true;
+                        }
                     }
                     
                 }
@@ -519,29 +548,32 @@ public class AdminSystem : UdonSharpBehaviour
                     break;
                 }
             case "respawnallpicks":
-                if (instigator.isLocal)
+                if (instigator.isLocal && objSync != null)
                 {
                     foreach (VRCObjectSync objectSync in objSync)
                     {
-                        Networking.SetOwner(Networking.LocalPlayer, objectSync.gameObject);
-                        objectSync.Respawn();
+                        if (objectSync != null)
+                        {
+                            Networking.SetOwner(Networking.LocalPlayer, objectSync.gameObject);
+                            objectSync.Respawn();
+                        }
                     }
                 }
                 break;
             case "clearchat":
-                if (instigator.isLocal)
+                if (instigator.isLocal && chatManager != null)
                 {
                     chatManager._ClearChat();
                 }
                 break;
             case "TPAdminIsland":
-                if (instigator.isLocal)
+                if (instigator.isLocal && tpIslaAdmin != null)
                 {
                     Networking.LocalPlayer.TeleportTo(tpIslaAdmin.transform.position, tpIslaAdmin.transform.rotation, VRC_SceneDescriptor.SpawnOrientation.Default, false);
                 }
                 break;
             case "TPPrespawnIsland":
-                if (instigator.isLocal)
+                if (instigator.isLocal && tpIslaPreSpawn != null)
                 {
                     Networking.LocalPlayer.TeleportTo(tpIslaPreSpawn.transform.position, tpIslaPreSpawn.transform.rotation, VRC_SceneDescriptor.SpawnOrientation.Default, false);
                 }
@@ -613,9 +645,12 @@ public class AdminSystem : UdonSharpBehaviour
     public void _StopSpy()
     {
         spyPlayer = null;
-        screen.SetActive(false);
-        cam.enabled = false;
-        cam.gameObject.SetActive(false);
+        if (screen != null) screen.SetActive(false);
+        if (cam != null)
+        {
+            cam.enabled = false;
+            cam.gameObject.SetActive(false);
+        }
     }
 
     public bool _IsSpying()

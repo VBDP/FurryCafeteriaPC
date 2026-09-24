@@ -1,9 +1,10 @@
-﻿
+
 using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 using UnityEngine.UI;
+using VRC.SDK3.Persistence;
 
 [UdonBehaviourSyncMode(BehaviourSyncMode.NoVariableSync)]
 public class ToggleColliders : UdonSharpBehaviour
@@ -15,6 +16,9 @@ public class ToggleColliders : UdonSharpBehaviour
     [SerializeField] private Collider[] offObjects;
     private AudioSource audioSource;
 
+    [Header("Persistencia de VRChat")]
+    [Tooltip("La clave única registrada en tu PlayerData Profile para guardar esta opción.")]
+    public string saveKey;
 
     void Start()
     {
@@ -22,11 +26,33 @@ public class ToggleColliders : UdonSharpBehaviour
         _UpdateObjects();
     }
 
+    public override void OnPlayerRestored(VRCPlayerApi player)
+    {
+        if (player != null && player.isLocal && !string.IsNullOrEmpty(saveKey))
+        {
+            bool savedValue;
+            if (PlayerData.TryGetBool(player, saveKey, out savedValue))
+            {
+                isOn = savedValue;
+                _UpdateObjects();
+            }
+        }
+    }
+
     public void _ToggleChange()
     {
         isOn = !isOn;
         _UpdateObjects();
         audioSource.Play();
+        SaveState();
+    }
+
+    private void SaveState()
+    {
+        if (!string.IsNullOrEmpty(saveKey))
+        {
+            PlayerData.SetBool(saveKey, isOn);
+        }
     }
 
     private void _UpdateObjects()
@@ -39,13 +65,27 @@ public class ToggleColliders : UdonSharpBehaviour
         baseColor.a = isOn ? 0.25f : 1.0f;
         iconOff.color = baseColor;
 
-        foreach (Collider onObject in onObjects)
+        if (onObjects != null)
         {
-            onObject.enabled = isOn;
+            foreach (Collider onObject in onObjects)
+            {
+                if (onObject != null)
+                {
+                    onObject.enabled = isOn;
+                }
+            }
         }
-        foreach (Collider offObject in offObjects)
+
+        if (offObjects != null)
         {
-            offObject.enabled = !isOn;
+            foreach (Collider offObject in offObjects)
+            {
+                if (offObject != null)
+                {
+                    offObject.enabled = !isOn;
+                }
+            }
         }
     }
 }
+

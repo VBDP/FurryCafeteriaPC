@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using TMPro;
 using UdonSharp;
@@ -94,31 +94,38 @@ public class AdminPanel : UdonSharpBehaviour
 
     public void _RefreshSelectedPlayer()
     {
-        if (playerButtons.Length > 0)
+        if (playerButtons != null && playerButtons.Length > 0)
         {
             selectedPlayer = -1;
 
             for (int i = 0; i < playerButtons.Length; i++)
             {
-                if(playerButtons[i] && playerButtons[i].gameObject.name == selectedPlayerId.ToString())
+                if (playerButtons[i] && playerButtons[i].gameObject.name == selectedPlayerId.ToString())
                 {
                     playerButtons[i].SetIsOnWithoutNotify(true);
-                    selectedPlayer = 1;
+                    selectedPlayer = i;
+                    if (players != null && i < players.Length && Utilities.IsValid(players[i]))
+                    {
+                        _SetTargetPlayer(players[i]);
+                    }
                 }
             }
 
-            if(selectedPlayer == -1)
+            if (selectedPlayer == -1)
+            {
                 selectedPlayerId = -1;
+                targetPlayer = null;
+            }
             
-            functions.SetActive(selectedPlayer != -1);
+            if (functions != null) functions.SetActive(selectedPlayer != -1);
         }
     }
 
     public void _SelectedPlayerChanged()
     {
-        dangerActions._ToggleOff();
+        if (dangerActions != null) dangerActions._ToggleOff();
 
-        if (playerButtons.Length > 0)
+        if (playerButtons != null && playerButtons.Length > 0)
         {
             selectedPlayer = -1;
             for (int i = 0; i < playerButtons.Length; i++)
@@ -132,7 +139,7 @@ public class AdminPanel : UdonSharpBehaviour
                 }
             }
             
-            functions.SetActive(selectedPlayer != -1);
+            if (functions != null) functions.SetActive(selectedPlayer != -1);
         }
     }
 
@@ -155,9 +162,13 @@ public class AdminPanel : UdonSharpBehaviour
             {
                 if (Utilities.IsValid(player) && player.isMaster)
                 {
-                    rc4key = player.displayName + key;
+                    rc4key = player.displayName + (key != null ? key.text : "");
                     break;
                 }
+            }
+            if (rc4key == null)
+            {
+                rc4key = key != null ? key.text : "default_key";
             }
         }
 
@@ -256,14 +267,22 @@ public class AdminPanel : UdonSharpBehaviour
         //Debug.Log("Call Method " + methodName);
         if (CheckAllowedAdmin(Networking.LocalPlayer.displayName))
         {
+            if (!Utilities.IsValid(targetPlayer) && selectedPlayerId != -1)
+            {
+                targetPlayer = VRCPlayerApi.GetPlayerById(selectedPlayerId);
+            }
+
             string target = "_";
             if (Utilities.IsValid(targetPlayer))
                 target = targetPlayer.displayName;
 
-            Networking.SetOwner(Networking.LocalPlayer, adminSystem.gameObject);
+            if (adminSystem != null)
+            {
+                Networking.SetOwner(Networking.LocalPlayer, adminSystem.gameObject);
 
-            string syncedCall = Rc4("¤" + Networking.LocalPlayer.playerId + "/" + Networking.LocalPlayer.displayName + "/" + methodName + "/" + target + "/" + UnityEngine.Random.Range(0, 10000) + "/" + parameters, null);
-            adminSystem._SetSyncedCall(syncedCall);
+                string syncedCall = Rc4("¤" + Networking.LocalPlayer.playerId + "/" + Networking.LocalPlayer.displayName + "/" + methodName + "/" + target + "/" + UnityEngine.Random.Range(0, 10000) + "/" + parameters, null);
+                adminSystem._SetSyncedCall(syncedCall);
+            }
         }
     }
 
@@ -280,7 +299,7 @@ public class AdminPanel : UdonSharpBehaviour
     public void _Teleport() { _CallMethod("teleport", ""); }
     public void _Bring() { _CallMethod("bring", ""); }
     public void _Spy() { _CallMethod("spy", ""); }
-    public void _StopSpy() { adminSystem._StopSpy(); }
+    public void _StopSpy() { if (adminSystem != null) adminSystem._StopSpy(); }
     public void _ClearChat() { _CallMethod("clearchat", ""); }
     public void _TPAdminIsland() { _CallMethod("TPAdminIsland", ""); }
     public void _TPPrespawnIsland() { _CallMethod("TPPrespawnIsland", ""); }

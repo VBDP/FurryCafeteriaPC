@@ -1,10 +1,11 @@
-﻿
+
 using UdonSharp;
 using UnityEngine;
 using VRC.SDKBase;
 using VRC.Udon;
 using UnityEngine.UI;
 using UnityEngine.Rendering.PostProcessing;
+using VRC.SDK3.Persistence;
 
 #if !COMPILER_UDONSHARP && UNITY_EDITOR
 using UnityEditor;
@@ -20,6 +21,9 @@ public class ToggleButton : UdonSharpBehaviour
     [SerializeField] private GameObject[] offObjects;
     private AudioSource audioSource;
 
+    [Header("Persistencia de VRChat")]
+    [Tooltip("La clave única registrada en tu PlayerData Profile para guardar esta opción.")]
+    public string saveKey;
 
     void Start()
     {
@@ -27,23 +31,47 @@ public class ToggleButton : UdonSharpBehaviour
         _UpdateObjects();
     }
 
+    public override void OnPlayerRestored(VRCPlayerApi player)
+    {
+        if (player != null && player.isLocal && !string.IsNullOrEmpty(saveKey))
+        {
+            bool savedValue;
+            if (PlayerData.TryGetBool(player, saveKey, out savedValue))
+            {
+                isOn = savedValue;
+                _UpdateObjects();
+            }
+        }
+    }
+
     public void _ToggleChange()
     {
         isOn = !isOn;
         _UpdateObjects();
         audioSource.Play();
+        SaveState();
     }
 
     public void _ToggleOn()
     {
         isOn = true;
         _UpdateObjects();
+        SaveState();
     }
 
     public void _ToggleOff()
     {
         isOn = false;
         _UpdateObjects();
+        SaveState();
+    }
+
+    private void SaveState()
+    {
+        if (!string.IsNullOrEmpty(saveKey))
+        {
+            PlayerData.SetBool(saveKey, isOn);
+        }
     }
 
     private void _UpdateObjects()
